@@ -1,0 +1,48 @@
+.container{
+    display: flax;
+    background-color: red;
+}
+.head{
+    color: rgb(47, 0, 255);
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+}
+.boxes,.row1,.row2{
+    display: flex;
+}
+.box{
+    border: 2px solid black;
+    width: 50%;
+    padding: 40px 20px;
+    font-size: 20px;
+}
+#box1{
+    background-color: blueviolet;
+    width: 500px;
+}
+#box2{
+    background-color: rgb(226, 43, 156);
+    width: 500px;
+}
+#box3{
+    background-color: rgb(226, 141, 43);
+    width: 490px;
+}
+#box4{
+    background-color: rgb(64, 226, 43);
+}
+@media screen and (max-width:600px) {
+    .boxes{
+        display: block;
+    }
+}
+@media (max-width:450px) {
+    .row1,.row2{
+display: block;
+    }
+    
+} 
+.box{
+    width: 100%;
+}
