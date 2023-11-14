@@ -1,0 +1,23 @@
+.card{
+    height: 500px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+h2{
+    color: rgb(230, 98, 10);
+}
+span{
+    color: rgb(230, 98, 10);
+}
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    height: 200px;
+    width: 297px;
+    border-radius:20px;
+   
+}
