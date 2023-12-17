@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><b style="color:#ff004f;">A</b>bhishek</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Abhishek</span> Yadav <br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------About----------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/abhi photo.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet unde excepturi sequi tempore placeat delectus similique, fuga porro expedita eligendi quasi. Maiores ipsam amet perferendis, aperiam vel et pariatur molestiae quibusdam. Distinctio culpa praesentium quod eos repudiandae aut, nostrum enim natus ipsa, nemo voluptatibus? Corporis sed numquam tempore delectus dolorem aperiam, veritatis commodi dolorum mollitia ad laborum nisi explicabo, minus consectetur reiciendis! Neque nihil atque labore dolorem delectus nostrum enim, voluptates minima similique dicta maxime, ea nisi ducimus voluptatibus ad autem ullam doloribus aperiam nam! Perspiciatis saepe repudiandae incidunt voluptas doloribus sed obcaecati libero, est dolorem, illo molestiae fuga harum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Development</span><br>Building the front-end portion of websites</li>
+                            <li><span>Backend Development</span><br>Building the mechanisms that perform actions on websites</li>
+                            <li><span>Databases</span><br>Manages the Databases</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>1<sup>st</sup> November 2023   -  Current</span><br>Web Developer Intern at Incroyable Institute</li>
+                            <li><span>16<sup>th</sup>August 2023  - 12<sup>th</sup> September 2023</span><br>Frontend Developer trainee at NHPC</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024</span><br>Btech from Rameshwaram Institute of Technology and Management, Lucknow </li>
+                            <li><span>2018-2020</span><br>Intermediate From Saraswati Vidya Mandir Inter College Lalganj,Azamgarh </li>
+                            <li><span>2016  -  2018</span><br>High School From Saraswati Vidya Mandir Inter College Lalganj,Azamgarh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------Services----------------------- -->
+    <!-- <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">Se</h1>
+        </div>
+    </div> -->
+
+    <script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+ 
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+    </script>
+
+</body>
+</html>
