@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge7</title>
+    <style>
+        
+        .contaner{
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-gap: 0px;
+        }
+        .items{
+            padding: 15px;
+        }
+        
+        #box-1{
+            grid-template-rows: repeat(auto-fill, minmax(200px,1fr));
+            grid-column-start: 2;
+            grid-column-end: 10;
+            height: 100px;
+        }
+        #box-2{
+            background-color: aqua;
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        #box-3{
+            background-color: rgb(245, 250, 244);
+            grid-column-start: 2;
+            grid-column-end: 10;
+            height: 400px;
+            width: 100%;
+            
+        }
+        #box-4{
+            grid-column-start: 2;
+            grid-column-end: 10;
+            height: 100px;
+            
+            
+           
+        }
+       
+        
+    </style>    
+</head>
+<body>
+ <div class="contaner">
+        <div class="items" id="box-1">Header</div>
+        <div class="items" id="box-2">Nav</div>
+        <div class="items" id="box-3">Article</div>
+        <div class="items" id="box-4">Footer</div>
+    </main>
+</div>
+</body>
+</html>

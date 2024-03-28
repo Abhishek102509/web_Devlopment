@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTAGRAM</title>
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>This Page belongs to @ <%= data.name%></h2>
+    <button>Follow</button>
+    <button>Massege</button>
+    
+    <h2>followers:<%=data.followers%> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; following:<%=data.following%> </h2>
+
+    <br>
+    <hr>
+    <% for (let post of data.posts){ %>
+       <img src="<%=post.image%>"alt="">
+       <p>likes:<%= post.likes %> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; comments:<%=post.comments%> </p>
+
+    <%}%>
+
+
+</body>
+</html>
